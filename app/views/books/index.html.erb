@@ -34,7 +34,6 @@
         <td><%= book.publish %></td>
         <td><%= book.published %></td>
         <td><%= book.cd %></td>
-
         <td><%= link_to '閲覧', book %></td>
         <td><%= link_to '編集', edit_book_path(book) %></td>
         <td><%= link_to '削除', book, method: :delete, data: { confirm: 'それでいいの？' } %></td>
