@@ -112,6 +112,10 @@ devise
 
 ```markdown
 
+[ windows/mroonga/mariadb  ]
+
+https://github.com/mroonga/mroonga/releases
+
 [ .bash_profile ]
 
 export NYASOCOM_BETA_DATABASE_PASSWORD="" # database password
