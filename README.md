@@ -121,14 +121,16 @@ https://github.com/mroonga/mroonga/releases
 export NYASOCOM_BETA_DATABASE_PASSWORD="" # database password
 export PATH="$NYASOCOM_BETA_DATABASE_PASSWORD:$PATH"
 
-Googleアカウントを登録
+[ Googleアカウントを登録 ]
+
 config/environments/development.rb
 
-67,68行目 認証時Googleアカウント指定
+[ 67,68行目 認証時Googleアカウント指定 ]
 :user_name => "", #gmailアドレス
 :password => "", #gmailパスワード
 
-セキュリティを下げておく→認証後、設定を戻す。
+[ セキュリティを下げておく→認証後、設定を戻す ]
+
 https://www.google.com/settings/security/lesssecureapps
 
 sign up → Gmail and Gmailパスワード登録
