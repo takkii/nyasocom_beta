@@ -22,7 +22,7 @@
 
 ```
 
-Gemfile
+### Gemfile
 
 ```markdown
 
@@ -110,7 +110,7 @@ gem 'tzinfo-data', platforms: [:x64_mingw]
 
 ```
 
-devise
+### devise
 
 ```markdown
 
