@@ -5,19 +5,21 @@
 *Things you may want to cover:*
 
 ```markdown
-* Ruby version 2.6.0
+
+* Ruby version 2.6.5
 
 * System dependencies UNIX
 
-   ※ need mysql mroonga. 
+   ※ need mysql mroonga.
 
-* Configuration Rails5.2
+* Configuration Rails 5.2.x
 
 * Database creation mysql
 
 * How to run the test suite rspec and cucumber
 
 * Deployment instructions heroku or sakura vps or local server
+
 ```
 
 Gemfile
