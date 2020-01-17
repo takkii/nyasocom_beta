@@ -1,10 +1,10 @@
 # nyasocom_act2
 
-###web system name is '鬼灯'
+### web system name is '鬼灯'
 
 *Things you may want to cover:*
 
-```text
+```markdown
 * Ruby version 2.6.0
 
 * System dependencies UNIX
@@ -22,14 +22,15 @@
 
 Gemfile
 
-```text
+```markdown
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.0'
+ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.1'
+gem 'rails', '~> 5.2.3'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use Puma as the app server
@@ -70,6 +71,8 @@ gem 'web-app-theme'
 gem 'nokogiri'
 gem 'devise'
 
+ gem 'wdm', '>= 0.1.0'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -99,11 +102,21 @@ group :test do
   gem 'cucumber'
   gem 'database_cleaner'
 end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:x64_mingw]
+
 ```
 
 devise
 
-```txt
+```markdown
+
+[ .bash_profile ]
+
+export NYASOCOM_BETA_DATABASE_PASSWORD="" # database password
+export PATH="$NYASOCOM_BETA_DATABASE_PASSWORD:$PATH"
+
 Googleアカウントを登録
 config/environments/development.rb
 
@@ -116,4 +129,5 @@ https://www.google.com/settings/security/lesssecureapps
 
 sign up → Gmail and Gmailパスワード登録
 → Gmailに本登録メールが届く → 認証
+
 ```
