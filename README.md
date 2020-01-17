@@ -139,3 +139,27 @@ sign up → Gmail and Gmailパスワード登録
 → Gmailに本登録メールが届く → 認証
 
 ```
+
+### Starting 鬼灯
+
+```markdown
+
+git clone https://github.com/takkii/nyasocom_beta.git
+
+cd nyasocom_beta
+
+rm -rf Gemfile.lock
+
+bundle install
+
+rake db:create
+
+rake db:migrate
+
+rake db:seed
+
+rails s
+
+Ctrl + C # Stop
+
+```
