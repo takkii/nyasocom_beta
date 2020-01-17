@@ -45,7 +45,7 @@ gem 'web-app-theme'
 gem 'nokogiri'
 gem 'devise'
 
- gem 'wdm', '>= 0.1.0'
+gem 'wdm', '>= 0.1.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
