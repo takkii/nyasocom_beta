@@ -128,10 +128,19 @@ export PATH="$NYASOCOM_BETA_DATABASE_PASSWORD:$PATH"
 
 config/environments/development.rb
 
-[ 67,68行目 認証時Googleアカウント指定 ]
+[ config/environments/development.rb、67-68行目 認証時Googleアカウント指定 ]
 
-:user_name => '', # gmailアドレス
-:password => '', # dgmailパスワード
+:username => Settings.gmail[:user_name],
+:password => Settings.gmail[:password],
+
+[ 設定 ]
+settings.local.yml (Gemfile, gem 'config')
+
+[ config/database.yml ]
+password: <%= Settings.database.password %>
+
+[ 設定 ]
+settings.yml (Gemfile, gem 'config')
 
 [ セキュリティを下げておく→認証後、設定を戻す ]
 
