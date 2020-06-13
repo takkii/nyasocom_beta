@@ -1,4 +1,4 @@
-# nyasocom_act2
+# nyasocom_beta
 
 ### web system name is '鬼灯'
 
@@ -25,14 +25,14 @@
 ### Gemfile
 
 ```markdown
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+# ruby '2.6.5'
+ruby '2.7.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.4.3'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use Puma as the app server
@@ -73,7 +73,9 @@ gem 'web-app-theme'
 gem 'nokogiri'
 gem 'devise'
 
-gem 'wdm', '>= 0.1.0'
+gem 'execjs'
+gem 'therubyracer'
+# gem 'wdm', '>= 0.1.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -106,8 +108,7 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:x64_mingw]
-
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ```
 
 ### devise
@@ -128,8 +129,9 @@ export PATH="$NYASOCOM_BETA_DATABASE_PASSWORD:$PATH"
 config/environments/development.rb
 
 [ 67,68行目 認証時Googleアカウント指定 ]
-:user_name => "", #gmailアドレス
-:password => "", #gmailパスワード
+
+:user_name => '', # gmailアドレス
+:password => '', # dgmailパスワード
 
 [ セキュリティを下げておく→認証後、設定を戻す ]
 
