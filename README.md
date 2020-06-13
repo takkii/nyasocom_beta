@@ -6,11 +6,11 @@
 
 ```markdown
 
-* Ruby version 2.6.5
+* Ruby version 2.7.1
 
 * System dependencies UNIX
 
-   ※ need mysql mroonga.
+   ※ Need mysql and mroonga.
 
 * Configuration Rails 5.2.x
 
@@ -163,5 +163,4 @@ rake db:seed
 rails s
 
 Ctrl + C # Stop
-
 ```
