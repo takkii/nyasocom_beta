@@ -184,4 +184,4 @@ Ctrl + C # Stop
 
 ### 鬼灯のレイアウト
 
-![鬼灯レイアウト](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuku_png2.png)
+![鬼灯レイアウト](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki_png.png)
