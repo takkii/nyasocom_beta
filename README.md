@@ -147,6 +147,9 @@ password: <%= Settings.database.password %>
 [ 設定 ]
 settings.yml (Gemfile, gem 'config')
 
+[ 環境構築 ]
+rails g config:install 
+
 [ セキュリティを下げておく→認証後、設定を戻す ]
 
 https://www.google.com/settings/security/lesssecureapps
