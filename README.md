@@ -24,7 +24,7 @@
 
 ```
 
-### Gemfile
+### Gemfile (2020.06.14 更新)
 
 ```markdown
 source 'https://rubygems.org'
@@ -81,6 +81,7 @@ gem 'mini_racer'
 # gem 'wdm', '>= 0.1.0'
 
 gem 'config'
+gem 'kaminari'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
