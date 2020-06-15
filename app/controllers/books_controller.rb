@@ -4,6 +4,7 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
+    @hon = Book.all
     @books = Book.page(params[:page]).per(PER)
     query = params[:query]
     if query.present?
