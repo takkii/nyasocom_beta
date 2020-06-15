@@ -41,8 +41,7 @@ gem 'rmagick'
 gem 'rails-i18n', '~> 5.1'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-# gem 'web-app-theme'
-# gem 'bootstrap'
+
 gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons'
 
@@ -50,7 +49,6 @@ gem 'nokogiri'
 gem 'devise'
 
 gem 'execjs'
-#gem 'therubyracer'
 gem 'mini_racer'
 # gem 'wdm', '>= 0.1.0'
 
