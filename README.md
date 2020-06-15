@@ -26,7 +26,7 @@
 
 ### Gemfile (2020.06.15 更新)
 
-```markdown
+```ruby
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -126,7 +126,7 @@ end
 
 https://github.com/mroonga/mroonga/releases
 
-[ .bash_profile ]
+[ .bashrc or .zshrc ]
 
 export NYASOCOM_BETA_DATABASE_PASSWORD="" # database password
 export PATH="$NYASOCOM_BETA_DATABASE_PASSWORD:$PATH"
@@ -151,14 +151,32 @@ settings.yml (Gemfile, gem 'config')
 
 [ 環境構築 ]
 rails g config:install 
+```
 
+### settings.local.ymlの記述例
+
+```yml
+gmail:
+  user_name: 'Gmail address'
+  password: 'Gmail password'
+```
+
+### settings.ymlの記述例
+
+```yml
+database:
+  password: 'mysql password'
+```
+
+### Googleアカウントセキュリティ管理
+
+```markdown
 [ セキュリティを下げておく→認証後、設定を戻す ]
 
 https://www.google.com/settings/security/lesssecureapps
 
 sign up → Gmail and Gmailパスワード登録
 → Gmailに本登録メールが届く → 認証
-
 ```
 
 ### mroonga 環境構築
