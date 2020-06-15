@@ -1,8 +1,8 @@
 [![GitHub release](https://img.shields.io/github/release/takkii/nyasocom_beta.svg?style=flat)](GitHub)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/nyasocom_beta.svg?style=flat)](GitHub)
 
-# nyasocom_beta
+# nyasocom_beta, project name.
 
-### web system name is '鬼灯'
+### web Library System name is '鬼灯'
 
 *Things you may want to cover:*
 
@@ -10,7 +10,7 @@
 
 * Ruby version 2.7.1
 
-* System dependencies UNIX
+* System dependencies UNIX and Windows or WSL.
 
    ※ Need mysql and mroonga.
 
@@ -24,7 +24,7 @@
 
 ```
 
-### Gemfile (2020.06.14 更新)
+### Gemfile (2020.06.15 更新)
 
 ```markdown
 source 'https://rubygems.org'
@@ -67,16 +67,17 @@ gem 'carrierwave'
 gem 'rmagick'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'bootstrap'
 gem 'rails-i18n', '~> 5.1'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-gem 'web-app-theme'
+
+gem 'materialize-sass', '~> 1.0.0'
+gem 'material_icons'
+
 gem 'nokogiri'
 gem 'devise'
 
 gem 'execjs'
-#gem 'therubyracer'
 gem 'mini_racer'
 # gem 'wdm', '>= 0.1.0'
 
@@ -114,7 +115,7 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ```
 
 ### devise
