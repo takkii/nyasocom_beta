@@ -1,4 +1,4 @@
-<div style="padding-left: 10%;">
+<div style="position:absolute;left:45vw;">
   <h3><p id="RealtimeClockArea2"></p></h3>
 </div>
 
@@ -6,9 +6,8 @@
 
 <div style="padding-left: 10%;">
   <p>表示 : <%= @books.count %> records</p>
-  <p>「 題名を検索 」</p>
   <%= form_tag(books_path, method: "get") do %>
-    <%= button_tag fa_icon("search"), :name => nil, class: "btn btn-primary" %><%= search_field_tag "query", params["query"] %>
+    題名 : <%= button_tag fa_icon("search"), :name => nil, class: "btn btn-primary" %><%= search_field_tag "query", params["query"] %>
     <%= submit_tag "検索" %>
   <% end %>
 </div>
