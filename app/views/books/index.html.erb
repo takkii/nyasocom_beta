@@ -5,7 +5,8 @@
 <p id="notice"><%= notice %></p>
 
 <div style="padding-left: 10%;">
-  <p><%= @books.count %> records</p>
+  <p>表示 : <%= @books.count %> records</p>
+  <p>「 題名を検索 」</p>
   <%= form_tag(books_path, method: "get") do %>
     <%= button_tag fa_icon("search"), :name => nil, class: "btn btn-primary" %><%= search_field_tag "query", params["query"] %>
     <%= submit_tag "検索" %>
