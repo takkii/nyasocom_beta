@@ -160,6 +160,18 @@ sign up → Gmail and Gmailパスワード登録
 
 ```
 
+### mroonga 環境構築
+
+[mroonga(mac)](https://gist.github.com/takkii/5b6110b6643e28593842102c39fba0e5)
+
+*※ WindowsはmariaDBで既存mroongaが用意されています*
+
+[mroonga(windows)](https://github.com/mroonga/mroonga/releases)
+
+*※Linuxカーネルは、公式にドキュメントがあります*
+
+[mroonga(Linuxkernel)](https://mroonga.org/ja/docs/install.html)
+
 ### Starting 鬼灯
 
 ```markdown
