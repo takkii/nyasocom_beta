@@ -54,6 +54,8 @@ gem 'mini_racer'
 
 gem 'config'
 gem 'kaminari'
+gem 'rails_admin'
+gem 'cancan'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
