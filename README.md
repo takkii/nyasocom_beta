@@ -179,6 +179,7 @@ sign up → Gmail and Gmailパスワード登録
 ```
 
 ### mroonga 環境構築
+*※ MacOSは自作gistを参考、またはmroongaをhomebrewでインストールします* 
 
 [mroonga(mac)](https://gist.github.com/takkii/5b6110b6643e28593842102c39fba0e5)
 
@@ -186,13 +187,14 @@ sign up → Gmail and Gmailパスワード登録
 
 [mroonga(windows)](https://github.com/mroonga/mroonga/releases)
 
-*※Linuxカーネルは、公式にドキュメントがあります*
+*※ Linuxカーネルは、公式にドキュメントがあります*
 
 [mroonga(Linuxkernel)](https://mroonga.org/ja/docs/install.html)
 
 ### Starting 鬼灯
 
 ```markdown
+環境構築 (nyasocom_beta)
 
 git clone https://github.com/takkii/nyasocom_beta.git
 
@@ -208,9 +210,9 @@ rake db:migrate
 
 rake db:seed
 
-rails s
+rails s          # local server Start up
 
-Ctrl + C # Stop
+Ctrl + C         # Stop
 ```
 
 ### 鬼灯のレイアウト
