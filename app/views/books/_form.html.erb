@@ -10,44 +10,44 @@
       </ul>
     </div>
   <% end %>
-
+<br />
   <div class="field">
     <%= form.label :isbn %>
     <%= form.text_field :isbn %>
   </div>
-
+  <br />
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
-
+  <br />
   <div class="field">
     <%= form.label :price %>
     <%= form.number_field :price %>
   </div>
-
+  <br />
   <div class="field">
     <%= form.label :publish %>
     <%= form.text_field :publish %>
   </div>
-
+  <br />
   <div class="field">
     <%= form.label :published %>
     <%= form.date_select :published %>
   </div>
-
+  <br />
   <div class="field">
     <%= form.label :cd %>
     <%= form.check_box :cd %>
   </div>
-
+  <br />
   <div class="field">
     <%= form.label :picture %>
     <%= form.file_field :picture, id: :book_picture %>
   </div>
-
+  <br />
   <div class="actions">
     <%= form.submit %>
   </div>
-
+  <br />
 <% end %>
