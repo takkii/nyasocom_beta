@@ -30,7 +30,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# ruby '2.6.5'
 ruby '2.7.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -43,10 +42,12 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
+gem 'execjs'
+gem 'mini_racer'
 # gem 'mini_racer', platforms: :ruby
-#gem 'honoka-rails', '>= 3.3.6.3'
-#gem 'bootstrap-sass'
+
 gem 'jquery-rails'
 gem 'autoprefixer-rails'
 # Use CoffeeScript for .coffee assets and views
@@ -73,16 +74,14 @@ gem 'rails-i18n', '~> 5.1'
 
 gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons'
-
 gem 'nokogiri'
 gem 'devise'
-
-gem 'execjs'
-gem 'mini_racer'
 # gem 'wdm', '>= 0.1.0'
 
 gem 'config'
 gem 'kaminari'
+gem 'rails_admin'
+gem 'cancan'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
