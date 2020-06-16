@@ -36,6 +36,6 @@
     <%= image_tag(@book.picture_url) if @book.picture.present? %>
   </p>
   <br/>
-  <%= link_to '編集', edit_book_path(@book) %> |
-  <%= link_to '戻る', books_path %>
+  | <%= link_to '編集', edit_book_path(@book) %> |
+  <%= link_to '戻る', books_path %> |
 </div>
