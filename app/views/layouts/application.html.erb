@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%= image_path("public/images/nyacosom.ico", skip_pipeline: true)%>
   <title>My Books Library</title>
+  <%= favicon_link_tag 'nyasocom.ico', skip_pipeline: true %>
   <%= stylesheet_link_tag "books", :media => "all" %>
   <%= csrf_meta_tag %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
