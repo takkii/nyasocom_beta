@@ -179,6 +179,23 @@ sign up → Gmail and Gmailパスワード登録
 → Gmailに本登録メールが届く → 認証
 ```
 
+### Admin User Settings
+
+```markdown
+$ rails c
+user = User.find(1) # Userからid番号指定 
+user.update_attribute(:admin, "true") # 指定した番号のUserをadmin登録
+```
+
+### 管理者のみ管理画面へ変移
+
+*config/initializers/rails_admin.rb*
+
+```markdown
+## == CancanCan ==
+config.authorize_with :cancancan
+```
+
 ### mroonga 環境構築
 *※ MacOSは自作gistを参考、またはmroongaをhomebrewでインストールします* 
 
