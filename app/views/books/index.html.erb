@@ -34,7 +34,7 @@
 
     <thead>
     <tr>
-      <th align="left">国 際 標 準 図 書 番 号</th>
+      <th align="left">国際標準図書番号</th>
       <th align="left">題 名</th>
       <th align="left">価 格 (¥)</th>
       <th align="left">著 者</th>
@@ -45,20 +45,22 @@
     </thead>
 
     <tbody>
-    <div class="list-group">
-      <% @books.each do |book| %>
-        <tr>
-          <td><%= book.isbn %></td>
-          <td><%= book.title %></td>
-          <td><%= book.price %></td>
-          <td><%= book.publish %></td>
-          <td><%= book.published %></td>
-          <td><%= book.cd %></td>
-          <td><%= link_to '閲覧', book, class: "btn btn-primary" %></td>
-          <td><%= link_to '編集', edit_book_path(book), class: "btn btn-primary" %></td>
-          <td><%= link_to '削除', book, method: :delete, data: {confirm: '登録した書籍情報を削除しますか？'}, class: "btn btn-primary" %></td>
-        </tr>
-      <% end %>
+    <div class="attach">
+      <div class="list-group">
+        <% @books.each do |book| %>
+          <tr>
+            <td><%= book.isbn %></td>
+            <td><%= book.title %></td>
+            <td><%= book.price %></td>
+            <td><%= book.publish %></td>
+            <td><%= book.published %></td>
+            <td><%= book.cd %></td>
+            <td><%= link_to '閲覧', book, class: "btn btn-primary" %></td>
+            <td><%= link_to '編集', edit_book_path(book), class: "btn btn-primary" %></td>
+            <td><%= link_to '削除', book, method: :delete, data: {confirm: '登録した書籍情報を削除しますか？'}, class: "btn btn-primary" %></td>
+          </tr>
+        <% end %>
+      </div>
     </div>
     </tbody>
   </table>
