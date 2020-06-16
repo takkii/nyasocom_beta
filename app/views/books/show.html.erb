@@ -1,39 +1,41 @@
-<p id="notice"><%= notice %></p>
+<div class="leaf">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Isbn:</strong>
-  <%= @book.isbn %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @book.price %>
-</p>
-
-<p>
-  <strong>Publish:</strong>
-  <%= @book.publish %>
-</p>
-
-<p>
-  <strong>Published:</strong>
-  <%= @book.published %>
-</p>
-
-<p>
-  <strong>Cd:</strong>
-  <%= @book.cd %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag(@book.picture_url) if @book.picture.present? %>
-</p>
-
-<%= link_to '編集', edit_book_path(@book) %> |
-<%= link_to '戻る', books_path %>
+  <p>
+    <strong>Isbn:</strong>
+    <%= @book.isbn %>
+  </p>
+  <br/>
+  <p>
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </p>
+  <br/>
+  <p>
+    <strong>Price:</strong>
+    <%= @book.price %>
+  </p>
+  <br/>
+  <p>
+    <strong>Publish:</strong>
+    <%= @book.publish %>
+  </p>
+  <br/>
+  <p>
+    <strong>Published:</strong>
+    <%= @book.published %>
+  </p>
+  <br/>
+  <p>
+    <strong>CD:</strong>
+    <%= @book.cd %>
+  </p>
+  <br/>
+  <p>
+    <strong>Picture:</strong>
+    <%= image_tag(@book.picture_url) if @book.picture.present? %>
+  </p>
+  <br/>
+  <%= link_to '編集', edit_book_path(@book) %> |
+  <%= link_to '戻る', books_path %>
+</div>
