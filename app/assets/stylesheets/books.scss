@@ -2,19 +2,23 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.scroll {
+  overflow-x: hidden;
+}
+
 .books {
   position: relative;
   left: 40vw;
 }
 
 .left {
-  padding-left: 10%;
+  padding-left: 10vw;
 }
 
 .right {
   position: absolute;
-  top: 1%;
-  left: 62.5%;
+  top: 1vw;
+  left: 62.5vw;
 }
 
 .timer {
@@ -23,7 +27,7 @@
 }
 
 .shelf {
-  padding-left: 5%;
+  padding-left: 5vw;
 }
 
 .leaf{
