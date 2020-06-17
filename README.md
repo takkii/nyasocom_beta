@@ -1,5 +1,7 @@
 [![GitHub release](https://img.shields.io/github/release/takkii/nyasocom_beta.svg?style=flat)](GitHub)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/nyasocom_beta.svg?style=flat)](GitHub)
 
+<div align="center"><img src="https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki.png" alt="hozuki" title="logo"></div>
+
 # nyasocom_beta, project name.
 
 ### web Library System name is '鬼灯'
@@ -238,3 +240,4 @@ Ctrl + C         # Stop
 ![鬼灯レイアウト](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki_mt9.png)
 
 ![鬼灯レイアウト](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki.png)
+
