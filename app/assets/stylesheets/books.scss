@@ -81,7 +81,7 @@
 .pythonista {
   position: absolute;
   top: 5.5vw;
-  left: 40vw;
+  left: 41vw;
   animation: rotate-anime 3s linear infinite;
 }
 
@@ -97,7 +97,7 @@
 .pyruby {
   position: absolute;
   top: 5.5vw;
-  left: 33vw;
+  left: 34vw;
   animation: rotate-anime 3s linear infinite;
 }
 
@@ -112,4 +112,20 @@
 
 .attach {
   pointer-events: auto;
+}
+
+.zukkii {
+  position: absolute;
+  top: 5.5vw;
+  left: 27vw;
+  animation: rotate-ani 3s linear infinite;
+}
+
+@keyframes rotate-ani {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
