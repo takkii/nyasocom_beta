@@ -82,7 +82,7 @@
   position: absolute;
   top: 5.5vw;
   left: 41vw;
-  animation: rotate-anime 3s linear infinite;
+  animation: rotate-aniY 3s linear infinite;
 }
 
 .pyruby {
@@ -100,10 +100,19 @@
   position: absolute;
   top: 5.5vw;
   left: 27vw;
-  animation: rotate-ani 3s linear infinite;
+  animation: rotate-aniY 3s linear infinite;
 }
 
-@keyframes rotate-ani {
+@keyframes rotate-anime {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-aniY {
   0% {
     transform: rotate(0);
   }
