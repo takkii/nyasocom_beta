@@ -3,7 +3,7 @@ ja:
   activerecord:
     errors:
       messages:
-        record_invalid: "バリデーションに失敗しました: %{errors}"
+        record_invalid: 'バリデーションに失敗しました: %{errors}'
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
@@ -17,7 +17,7 @@ ja:
     - 金
     - 土
     abbr_month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -43,7 +43,7 @@ ja:
       long: "%Y年%m月%d日(%a)"
       short: "%m/%d"
     month_names:
-    -
+    - 
     - 1月
     - 2月
     - 3月
@@ -75,51 +75,42 @@ ja:
         one: 1年弱
         other: "%{count}年弱"
       half_a_minute: 30秒前後
-      less_than_x_minutes:
-        one: 1分以内
-        other: "%{count}分未満"
       less_than_x_seconds:
         one: 1秒以内
         other: "%{count}秒未満"
+      less_than_x_minutes:
+        one: 1分以内
+        other: "%{count}分未満"
       over_x_years:
         one: 1年以上
         other: "%{count}年以上"
-      x_days:
-        one: 1日
-        other: "%{count}日"
+      x_seconds:
+        one: 1秒
+        other: "%{count}秒"
       x_minutes:
         one: 1分
         other: "%{count}分"
+      x_days:
+        one: 1日
+        other: "%{count}日"
       x_months:
         one: 1ヶ月
         other: "%{count}ヶ月"
       x_years:
         one: 1年
         other: "%{count}年"
-      x_seconds:
-        one: 1秒
-        other: "%{count}秒"
     prompts:
-      day: 日
-      hour: 時
-      minute: 分
-      month: 月
       second: 秒
+      minute: 分
+      hour: 時
+      day: 日
+      month: 月
       year: 年
   errors:
     format: "%{attribute}%{message}"
     messages:
-      already_confirmed: "は既に登録済みです。ログインしてください"
-      confirmation_period_expired: "%{period}以内に確認する必要がありますので、新しくリクエストしてください。"
-      expired: "有効期限切れです。新規登録してください。"
-      not_found: "は見つかりませんでした。"
-      not_locked: "ロックされていません。"
-      not_saved:
-        one: "エラーにより、この %{resource} を保存できません："
-        other: "%{count} 個のエラーにより、この %{resource} を保存できません："
       accepted: を受諾してください
       blank: を入力してください
-      present: は入力しないでください
       confirmation: と%{attribute}の入力が一致しません
       empty: を入力してください
       equal_to: は%{count}にしてください
@@ -131,16 +122,17 @@ ja:
       invalid: は不正な値です
       less_than: は%{count}より小さい値にしてください
       less_than_or_equal_to: は%{count}以下の値にしてください
-      model_invalid: "バリデーションに失敗しました: %{errors}"
+      model_invalid: 'バリデーションに失敗しました: %{errors}'
       not_a_number: は数値で入力してください
       not_an_integer: は整数で入力してください
       odd: は奇数にしてください
+      other_than: は%{count}以外の値にしてください
+      present: は入力しないでください
       required: を入力してください
       taken: はすでに存在します
       too_long: は%{count}文字以内で入力してください
       too_short: は%{count}文字以上で入力してください
       wrong_length: は%{count}文字で入力してください
-      other_than: は%{count}以外の値にしてください
     template:
       body: 次の項目を確認してください
       header:
@@ -188,12 +180,12 @@ ja:
         format: "%n%u"
         units:
           byte: バイト
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
-          tb: TB
           pb: PB
-          eb: EB
+          tb: TB
     percentage:
       format:
         delimiter: ''
@@ -203,9 +195,9 @@ ja:
         delimiter: ''
   support:
     array:
-      last_word_connector: 、
-      two_words_connector: 、
-      words_connector: 、
+      last_word_connector: "、"
+      two_words_connector: "、"
+      words_connector: "、"
   time:
     am: 午前
     formats:
@@ -213,49 +205,3 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
-  devise:
-    confirmations:
-      confirmed: "アカウントが確認されました。ログインしています。"
-      send_instructions: "アカウントの確認方法を数分以内にメールでご連絡します。"
-      send_paranoid_instructions: "ご登録のメールアドレスが保存されている場合、アカウントの確認方法をメールでご連絡します。"
-    failure:
-      already_authenticated: "既にログインしています。"
-      inactive: "Your account is not activated yet."
-      invalid: "Invalid email or password."
-      locked: "アカウントがロックされています。"
-      last_attempt: "あなたのアカウントがロックされる前に、もう1つの試みを持っています。"
-      not_found_in_database: "メールアドレスまたはパスワードが無効です。"
-      timeout: "一定時間が経過したため、再度ログインが必要です"
-      unauthenticated: "ログインまたは登録が必要です。"
-      unconfirmed: "本登録を行ってください。"
-    mailer:
-      confirmation_instructions:
-        subject: "アカウントの登録方法"
-      reset_password_instructions:
-        subject: "パスワードの再設定"
-      unlock_instructions:
-        subject: "アカウントのロック解除"
-    omniauth_callbacks:
-      failure: "%{kind} から承認されませんでした。理由：%{reason}"
-      success: "%{kind} から承認されました。"
-    passwords:
-      no_token: "このページにアクセスする事が出来ません。正しいURLでアクセスしている事を確認して下さい。"
-      send_instructions: "パスワードのリセット方法を数分以内にメールでご連絡します。"
-      send_paranoid_instructions: ""
-      updated: "パスワードを変更しました。"
-      updated_not_active: "パスワードを変更しました。"
-    registrations:
-      destroyed: "アカウントを削除しました。またのご利用をお待ちしております。"
-      signed_up: "アカウント登録を受け付けました。"
-      signed_up_but_inactive: "アカウントは登録されていますが、アクティブになっていないため利用できません。"
-      signed_up_but_locked: "アカウントは登録されていますが、ロックされているため利用できません。"
-      signed_up_but_unconfirmed: "確認メールを登録したメールアドレス宛に送信しました。リンクを開いてアカウントを有効にして下さい。"
-      update_needs_confirmation: "アカウント情報が更新されました。更新の確認メールを新しいメールアドレス宛に送信しましたので、リンクを開いて更新を有効にして下さい。"
-      updated: "アカウントが更新されました。"
-    sessions:
-      signed_in: "ログインしました。"
-      signed_out: "ログアウトしました。"
-    unlocks:
-      send_instructions: "アカウントのロックを解除する方法を数分以内にメールでご連絡します。"
-      send_paranoid_instructions: "アカウントが存在する場合、ロックを解除する方法をメールでご連絡します。"
-      unlocked: "アカウントのロックが解除されました。ログインしています。"
