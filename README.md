@@ -45,15 +45,15 @@ rails g config:install
 
 ```yml
 gmail:
-  user_name: 'Gmail address'
-  password: 'Gmail password'
+  user_name: 'Gmail_address'
+  password: 'Gmail_password'
 ```
 
 ### settings.ymlの記述例
 
 ```yml
 database:
-  password: 'mysql password'
+  password: 'mysql_password'
 ```
 
 ### Googleセキュリティ管理
