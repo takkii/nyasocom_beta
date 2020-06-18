@@ -48,6 +48,8 @@ gem 'bootstrap'
 #gem 'material_icons'
 gem 'nokogiri'
 gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
 # gem 'wdm', '>= 0.1.0'
 
 gem 'config'
