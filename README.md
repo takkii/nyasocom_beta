@@ -2,57 +2,42 @@
 
 <div align="center"><img src="https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki.png" alt="hozuki" title="logo"></div>
 
-# nyasocom_beta, project name.
+## Project Name, nyasocom_beta.
 
-### web Library System name is '鬼灯'
+*nyasocomの試作品として作り始めました...*
 
-*Things you may want to cover:*
+### Web Library System Name is '鬼灯'
 
 ```markdown
-
 * Ruby version 2.7.1
-
-* System dependencies UNIX and Windows or WSL.
 
    ※ Need mysql and mroonga.
 
 * Configuration Rails 6.0.x
-
-* Database creation mysql
-
-* How to run the test suite rspec and cucumber
-
-* Deployment instructions heroku or sakura vps or local server
-
 ```
 
-### devise
+### ログインするためには
 
 ```markdown
-[ .bashrc or .zshrc ]
+> .bashrc or etc shell. 
+export NYASOCOM_BETA_DATABASE_PASSWORD="database password"
 
-export NYASOCOM_BETA_DATABASE_PASSWORD="" # database password
-export PATH="$NYASOCOM_BETA_DATABASE_PASSWORD:$PATH"
+> Googleアカウントを登録
 
-[ Googleアカウントを登録 ]
+> config/environments/development.rb
 
-config/environments/development.rb
-
-[ config/environments/development.rb、67-68行目 認証時Googleアカウント指定 ]
-
+> 67-68行目 認証時Googleアカウント指定
 :username => Settings.gmail[:user_name],
 :password => Settings.gmail[:password],
 
-[ 設定 ]
-settings.local.yml (Gemfile, gem 'config')
-
-[ config/database.yml ]
+> config/database.yml
 password: <%= Settings.database.password %>
 
-[ 設定 ]
+> config/
 settings.yml (Gemfile, gem 'config')
+settings.local.yml (Gemfile, gem 'config')
 
-[ 環境構築 ]
+> 環境構築
 rails g config:install 
 ```
 
@@ -71,35 +56,34 @@ database:
   password: 'mysql password'
 ```
 
-### Googleアカウントセキュリティ管理
+### Googleセキュリティ管理
 
 ```markdown
-[ セキュリティを下げておく→認証後、設定を戻す ]
-
+> セキュリティを下げておく→認証後、設定を戻す
 https://www.google.com/settings/security/lesssecureapps
 
 sign up → Gmail and Gmailパスワード登録
 → Gmailに本登録メールが届く → 認証
 ```
 
-### Admin User Settings
+### 管理者権限付与
 
 ```markdown
 $ rails c
-user = User.find(1) # Userからid番号指定 
-user.update_attribute(:admin, "true") # 指定した番号のUserをadmin登録
+user = User.find(1) # 管理者対象をUser(id番号指定)
+user.update_attribute(:admin, "true") # 指定した番号のUserを登録
 ```
 
-### 管理者のみ管理画面へ変移
+### 管理者のみ管理画面設定 (11~12行目)
 
-*config/initializers/rails_admin.rb*
+> config/initializers/rails_admin.rb
 
 ```markdown
 ## == CancanCan ==
 config.authorize_with :cancancan
 ```
 
-### mroonga 環境構築
+### mroonga環境構築
 *※ MacOSは自作gistを参考、またはmroongaをhomebrewでインストールします* 
 
 [mroonga(mac)](https://gist.github.com/takkii/5b6110b6643e28593842102c39fba0e5)
@@ -118,19 +102,14 @@ config.authorize_with :cancancan
 git clone https://github.com/takkii/nyasocom_beta.git
 
 cd nyasocom_beta
-
 rm -rf Gemfile.lock
-
 bundle install
 
 rake db:create
-
 rake db:migrate
-
 rake db:seed
 
 rails s          # local server Start up
-
 Ctrl + C         # Stop
 ```
 
