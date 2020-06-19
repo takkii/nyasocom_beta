@@ -3,37 +3,37 @@
   <p id="notice"><%= notice %></p>
 <br />
   <p>
-    <strong>Isbn:</strong>
+    <strong>ISBN:</strong>
     <%= @book.isbn %>
   </p>
   <br/>
   <p>
-    <strong>Title:</strong>
+    <strong>題名:</strong>
     <%= @book.title %>
   </p>
   <br/>
   <p>
-    <strong>Price:</strong>
+    <strong>価格:</strong>
     <%= @book.price %>
   </p>
   <br/>
   <p>
-    <strong>Publish:</strong>
+    <strong>著者:</strong>
     <%= @book.publish %>
   </p>
   <br/>
   <p>
-    <strong>Published:</strong>
+    <strong>出版日:</strong>
     <%= @book.published %>
   </p>
   <br/>
   <p>
-    <strong>Cd:</strong>
+    <strong>購入:</strong>
     <%= @book.cd %>
   </p>
   <br/>
   <p>
-    <strong>Picture:</strong>
+    <strong>写真:</strong>
     <%= image_tag(@book.picture_url) if @book.picture.present? %>
   </p>
   <br/>
