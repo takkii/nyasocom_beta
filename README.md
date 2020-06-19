@@ -82,6 +82,13 @@ user.update_attribute(:admin, "true") # 指定した番号のUserを登録
 ## == CancanCan ==
 config.authorize_with :cancancan
 ```
+### カラム内データ削除
+
+*books (テーブル)、picture (カラム) = taka.jpeg (データ)*
+
+```markdown
+DELETE FROM books WHERE picture = "taka.jpeg";
+```
 
 ### mroonga環境構築
 *※ MacOSは自作gistを参考、またはmroongaをhomebrewでインストールします* 
