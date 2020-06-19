@@ -34,7 +34,7 @@
   <br/>
   <p>
     <strong>写真:</strong>
-    <%= image_tag(@book.picture_url) if @book.picture.present? %>
+    <%= image_tag(@book.picture.url) if @book.picture.present? %>
   </p>
   <br/>
   <%= link_to '編集', edit_book_path(@book), class: "btn btn-primary" %>
