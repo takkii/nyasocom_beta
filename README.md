@@ -82,7 +82,7 @@ user.update_attribute(:admin, "true") # 指定した番号のUserを登録
 ## == CancanCan ==
 config.authorize_with :cancancan
 ```
-### カラム内データ削除
+### MySQL側、カラム内データ削除
 
 *books (テーブル)、picture (カラム) = taka.jpeg (データ)*
 
