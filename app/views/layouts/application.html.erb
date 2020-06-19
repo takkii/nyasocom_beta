@@ -3,62 +3,63 @@
 <head>
   <title>My Books Library</title>
   <%= favicon_link_tag 'hozukicon.ico', skip_pipeline: true %>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> 'reload' %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
   <%= csrf_meta_tag %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="scroll">
-<div id="container">
-  <div class="attach">
-  <div id="header">
-    <div class="shelf">
-      <h1>Web Library System 「鬼灯」(Hozuki)</h1>
-    </div>
-    <div class="sponsor">
-    <iframe src="https://github.com/sponsors/takkii/card" title="Sponsor takkii" height="225" width="600" style="border: 0;"></iframe>
-    </div>
-    <div id="user-navigation">
-      <ul class="wat-cf">
-        <!-- <li><a href="#"><%= t("web-app-theme.profile", :default => "Profile") %></a></li> -->
-        <!-- <li><a href="#"><%= t("web-app-theme.settings", :default => "Settings") %></a></li> -->
-        <!-- <li><a href="/logout" class="logout"><%= t("web-app-theme.logout", :default => "Logout") %></a></li> -->
-      </ul>
-    </div>
-    <div id="main-navigation">
-      <ul class="wat-cf"></ul>
-    </div>
-  </div>
-  <div id="wrapper" class="wat-cf">
-    <div class="flash">
-      <% flash.each do |type, message| -%>
-        <div class="message <%= type %>">
-          <p>
-            <%= message %>
-          </p>
+  <div id="container">
+    <div class="attach">
+      <div id="header">
+        <div class="shelf">
+          <h1>Web Library System 「鬼灯」(Hozuki)</h1>
         </div>
-      <% end -%>
-    </div>
-    <div id="main">
-      <%= yield %>
-      <div id="footer">
-        <div class="block">
-          <div class="books">
-            <p>
-              Copyright &copy; 2018 - <%= Time.now.year %> Created by Takayuki Kamiyama
-              <%= link_to "Twitter/@takkii", "https://twitter.com/takkii" %> | <%= link_to "GitHub/@takkii", "https://github.com/takkii" %>
-            </p>
+        <div class="sponsor">
+          <iframe src="https://github.com/sponsors/takkii/card" title="Sponsor takkii" height="225" width="600" style="border: 0;"></iframe>
+        </div>
+        <div id="user-navigation">
+          <ul class="wat-cf">
+            <!-- <li><a href="#"><%= t("web-app-theme.profile", :default => "Profile") %></a></li> -->
+            <!-- <li><a href="#"><%= t("web-app-theme.settings", :default => "Settings") %></a></li> -->
+            <!-- <li><a href="/logout" class="logout"><%= t("web-app-theme.logout", :default => "Logout") %></a></li> -->
+          </ul>
+        </div>
+        <div id="main-navigation">
+          <ul class="wat-cf"></ul>
+        </div>
+      </div>
+      <div id="wrapper" class="wat-cf">
+        <div class="flash">
+          <% flash.each do |type, message| -%>
+            <div class="message <%= type %>">
+              <p>
+                <%= message %>
+              </p>
+            </div>
+          <% end -%>
+        </div>
+        <div id="main">
+          <%= yield %>
+          <div id="footer">
+            <div class="block">
+              <div class="books">
+                <p>
+                  Copyright &copy; 2018 - <%= Time.now.year %> Created by Takayuki Kamiyama
+                  <%= link_to "Twitter/@takkii", "https://twitter.com/takkii" %>
+                  | <%= link_to "GitHub/@takkii", "https://github.com/takkii" %>
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+        <div id="sidebar">
+          <%= yield :sidebar %>
         </div>
       </div>
     </div>
-    <div id="sidebar">
-      <%= yield :sidebar %>
-    </div>
   </div>
-</div>
-</div>
 </div>
 </body>
 </html>
