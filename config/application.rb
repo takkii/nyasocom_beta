@@ -20,6 +20,7 @@ module NyasocomAct2
     config.i18n.fallbacks = true
     config.i18n.fallbacks = [I18n.default_locale]
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
-    config.time_zone = "Tokyo"
+    config.time_zone = 'Tokyo'
+    config.active_record.default_timezone = :local
   end
 end
