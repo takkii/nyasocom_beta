@@ -1,1 +1,0 @@
-DELETE FROM books WHERE picture = "taka.jpeg";
