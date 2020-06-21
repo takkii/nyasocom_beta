@@ -66,7 +66,13 @@
             <td><%= book.publish %></td>
             <td><%= book.published %></td>
             <td><%= book.cd %></td>
-            <td><%= book.picture %></td>
+            <td>
+              <% if book.picture.present? %>
+                <% book.picture %>
+              <% else %>
+                写真はありません
+              <% end %>
+            </td>
             <td><%= link_to '閲覧', book, class: "btn btn-primary" %></td>
             <td><%= link_to '編集', edit_book_path(book), class: "btn btn-primary" %></td>
             <td><%= link_to '削除', book, method: :delete, data: {confirm: '登録した書籍情報を削除しますか？'}, class: "btn btn-primary" %></td>
