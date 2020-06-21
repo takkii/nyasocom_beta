@@ -6,6 +6,8 @@
 
 *nyasocomの試作品として作り始めました...*
 
+※ プロジェクトはMITライセンスですが、利用するときは個人情報の取り扱いに注意してください。
+
 ### Web Library System Name is '鬼灯'
 
 ```markdown
