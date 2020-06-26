@@ -35,12 +35,12 @@ export NYASOCOM_BETA_DATABASE_PASSWORD="database password"
 > config/database.yml
 password: <%= Settings.database.password %>
 
-> config/
-settings.yml (Gemfile, gem 'config')
-settings.local.yml (Gemfile, gem 'config')
-
 > 環境構築
-rails g config:install 
+rails g config:install
+
+> config/ (環境構築ができないとき自前で作成)
+settings.yml
+settings.local.yml
 ```
 
 ### settings.local.ymlの記述例
