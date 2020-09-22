@@ -127,4 +127,6 @@ Ctrl + C         # Stop
 
 ### 鬼灯のレイアウト
 
-![鬼灯レイアウト](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki_mt13.png)
+![鬼灯レイアウト(白)](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki_white.png)
+
+![鬼灯レイアウト(黒)](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki_black.png)
