@@ -23,13 +23,13 @@
 
 .timer {
   position: absolute;
-  top: 1.2vw;
-  left: 46.5vw;
+  top: 3vw;
+  left: 39vw;
 }
 
 .shelf {
   position: relative;
-  top: 0.8vw;
+  top: 0vw;
   padding-left: 10vw;
 }
 
@@ -65,7 +65,7 @@
 
 .sponsor {
   position: absolute;
-  top: 3vw;
+  top: 5vw;
   left: 54vw;
 }
 
@@ -86,7 +86,7 @@
 .pyruby {
   position: absolute;
   top: 5.5vw;
-  left: 34vw;
+  left: 35.5vw;
   animation: rotate-anime 3s linear infinite;
 }
 
@@ -97,7 +97,7 @@
 .zukkii {
   position: absolute;
   top: 5.5vw;
-  left: 27vw;
+  left: 29vw;
   animation: rotate-anime_y 3s linear infinite;
 }
 
@@ -138,7 +138,7 @@ label span {
   position: relative;
 }
 input#dark:checked ~ .switch-presentation {
-  --bg: #333;
+  --bg: #000080;
   --fg: #fff;
 }
 input#dark:checked ~ .switch-presentation .moon {
