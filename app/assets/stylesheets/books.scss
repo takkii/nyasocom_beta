@@ -65,7 +65,7 @@
 
 .sponsor {
   position: absolute;
-  top: 4.5vw;
+  top: 3vw;
   left: 54vw;
 }
 
@@ -117,4 +117,42 @@
   100% {
     transform: rotateY(360deg);
   }
+}
+
+:root {
+  --bg: #fff;
+  --fg: #333;
+
+}
+label span {
+  font-size: 2rem;
+}
+.switch-presentation {
+  position: relative;
+  padding: 0 1rem 1rem;
+  top: 0vw;
+  left: 0vw;
+}
+.moon {
+  visibility: hidden;
+  position: relative;
+}
+input#dark:checked ~ .switch-presentation {
+  --bg: #333;
+  --fg: #fff;
+}
+input#dark:checked ~ .switch-presentation .moon {
+  visibility: visible;
+}
+input#dark:checked ~ .switch-presentation .day {
+  visibility: hidden;
+  position:absolute;
+}
+.switch-presentation {
+  background: var(--bg);
+  color: var(--fg);
+}
+input[id="dark"] {
+  visibility: hidden;
+  position:absolute;
 }
