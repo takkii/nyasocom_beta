@@ -66,12 +66,15 @@ https://www.google.com/settings/security/lesssecureapps
 
 sign up → Gmail and Gmailパスワード登録
 → Gmailに本登録メールが届く → 認証
+```
 
+### Gmailでメールが受信できなかった場合
+
+```markdown
 rails server 実行コンソール内
 <p>Welcome karuma.reason@gmail.com!</p>
 <p>You can confirm your account email through the link below:</p>
 <p><a href="　(URL and TOKEN)　"> (URL and TOKENをブラウザに貼り付けで本人確認できる) Confirm my account</a></p>
-※ Gmailでメールが受信できなかった場合
 ```
 
 ### 管理者権限付与
@@ -133,4 +136,4 @@ Ctrl + C         # Stop
 
 ### 鬼灯のレイアウト
 
-![鬼灯レイアウト(白)](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki.gif)
+![鬼灯レイアウト(傘挙動 青→白)](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki.gif)
