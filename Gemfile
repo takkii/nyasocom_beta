@@ -18,7 +18,6 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'execjs'
 gem 'mini_racer'
-# gem 'mini_racer', platforms: :ruby
 
 gem 'jquery-rails'
 gem 'autoprefixer-rails'
@@ -42,12 +41,8 @@ gem 'rmagick'
 # gem 'capistrano-rails', group: :development
 # gem 'rails-i18n', '~> 5.1'
 gem 'rails-i18n', '~> 6.0'
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
 gem 'bootstrap'
 
-#gem 'materialize-sass', '~> 1.0.0'
-#gem 'material_icons'
 gem 'nokogiri'
 gem 'devise'
 gem 'devise-i18n'
