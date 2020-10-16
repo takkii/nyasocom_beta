@@ -19,6 +19,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'execjs'
 gem 'mini_racer'
 
+# Use TypeScript.
+gem 'webpacker'
+
 gem 'jquery-rails'
 gem 'autoprefixer-rails'
 # Use CoffeeScript for .coffee assets and views
