@@ -4,10 +4,11 @@
   <title>My Books Library</title>
   <%= favicon_link_tag 'hozukicon.ico', skip_pipeline: true %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   <%= csrf_meta_tag %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <!-- %= javascript_pack_tag 'hello_typescript' % -->
-  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 </head>
 <body>
 <input type="checkbox" id="dark" name="dark">
@@ -44,9 +45,9 @@
             <div class="block">
               <div class="books">
                 <p>
-                  Copyright &copy; 2018 - <%= Time.now.year %> Created by Takayuki Kamiyama
-                  <%= link_to "Twitter/@takkii", "https://twitter.com/takkii" %>
-                  | <%= link_to "GitHub/@takkii", "https://github.com/takkii" %>
+                  Copyright &copy; 2018 - <%= Time.now.year %> Created by Takayuki Kamiyama |
+                  <a href="https://twitter.com/takkii"><i class="fab fa-twitter"></i></a>
+                  | <a href="https://github.com/takkii"><i class="fab fa-github"></i></a> |
                 </p>
               </div>
             </div>
