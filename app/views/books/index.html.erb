@@ -27,8 +27,7 @@
     <div class="left">
       <p>表示 : <%= @books.count %> records</p>
       <%= form_tag(books_path, method: "get") do %>
-        題名
-        : <%= button_tag fa_icon("search"), :name => nil, class: "btn btn-primary" %><%= search_field_tag "query", params["query"] %>
+        題名:　<i class="fab fa-searchengin"></i><%= search_field_tag "query", params["query"] %>
         <%= submit_tag "検索" %>
       <% end %>
     </div>
