@@ -1,4 +1,9 @@
 class Book < ApplicationRecord
+  enum status: {
+    所持: 0, # possession
+    手放す: 1, # relinquish
+  }
+
   mount_uploader :picture, PictureUploader
 
   scope :full_text_search, -> (query) {
