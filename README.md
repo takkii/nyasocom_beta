@@ -94,16 +94,6 @@ user.update_attribute(:admin, "true") # 指定した番号のUserを登録
 config.authorize_with :cancancan
 ```
 
-### DB操作
-
-```markdown
-> python3.jpgをカラムに追加したと仮定
-
-$ rails c
-$ Book.where("picture < ?", "python3.jpg").delete_all
-※ python3.jpg以外、カラムがすべて消えます
-```
-
 ### mroonga環境構築
 *※ MacOSは自作gistを参考、またはmroongaをhomebrewでインストールします* 
 
