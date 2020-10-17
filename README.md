@@ -21,7 +21,7 @@
 ### ログインするためには
 
 ```markdown
-> .bashrc or etc shell. 
+> .bashrc or etc shell.
 export NYASOCOM_BETA_DATABASE_PASSWORD="database password"
 
 > Googleアカウントを登録
@@ -95,7 +95,7 @@ config.authorize_with :cancancan
 ```
 
 ### mroonga環境構築
-*※ MacOSは自作gistを参考、またはmroongaをhomebrewでインストールします* 
+*※ MacOSは自作gistを参考、またはmroongaをhomebrewでインストールします*
 
 [mroonga(mac)](https://gist.github.com/takkii/5b6110b6643e28593842102c39fba0e5)
 
