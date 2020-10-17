@@ -51,6 +51,7 @@
           <th align="left">出 版 日</th>
           <th align="left">購 入</th>
           <th align="left">写 真</th>
+          <th align="left">状 態</th>
           <th colspan="3"></th>
         </tr>
         </thead>
@@ -107,6 +108,13 @@
                     <%= book.picture %>
                   <% else %>
                     写真はありません
+                  <% end %>
+                </td>
+                <td>
+                  <% if book.status.present? %>
+                    <%= book.status %>
+                  <% else %>
+                    本はありません
                   <% end %>
                 </td>
                 <td><%= link_to '閲覧', book, class: "btn btn-primary" %></td>
