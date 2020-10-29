@@ -22,30 +22,29 @@ _nyasocom の試作品として作り始めました..._
 
 ```markdown
 > .bashrc or etc shell.
-> export NYASOCOM_BETA_DATABASE_PASSWORD="database password"
+export NYASOCOM_BETA_DATABASE_PASSWORD="database password"
 
 > Google アカウントを登録
 
-> config/environments/development.rb
+config/environments/development.rb
 
 > 67-68 行目 認証時 Google アカウント指定
-> :username => Settings.gmail[:user_name],
-> :password => Settings.gmail[:password],
+:username => Settings.gmail[:user_name],
+:password => Settings.gmail[:password],
 
 > config/database.yml
-> password: <%= Settings.database.password %>
+password: <%= Settings.database.password %>
 
 > 環境構築
-> rails g config:install
+rails g config:install
 
 > config/
+settings.yml
+settings.local.yml
 
-> settings.yml
-> settings.local.yml
-
-#### settings.sample.yml
-
-#### settings.sample.local.yml
+> nyasocom2/
+settings.sample.yml
+settings.sample.local.yml
 
 _ファイルの名前を変更し、.sample.を削除する_
 _その後、config/フォルダ内へ移動_
