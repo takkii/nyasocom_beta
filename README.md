@@ -35,8 +35,10 @@ config/environments/development.rb
 > config/database.yml
 password: <%= Settings.database.password %>
 
-> 環境構築
+> 環境構築 (自動生成)
 rails g config:install
+
+または手動にて環境構築
 
 > config/
 settings.yml
@@ -46,7 +48,7 @@ settings.local.yml
 settings.sample.yml
 settings.sample.local.yml
 
-ファイルの名前を変更し、.sample.を削除
+> ファイルの名前を変更し、.sample.を削除
 その後、config/フォルダ内へ移動
 ```
 
