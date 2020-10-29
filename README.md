@@ -4,74 +4,68 @@
 
 ## Project Name, nyasocom_beta.
 
-*nyasocomの試作品として作り始めました...*
+_nyasocom の試作品として作り始めました..._
 
-※ プロジェクトはMITライセンスですが、利用するときは個人情報の取り扱いに注意してください。
+※ プロジェクトは MIT ライセンスですが、利用するときは個人情報の取り扱いに注意してください。
 
 ### Web Library System Name is '鬼灯'
 
 ```markdown
-* Ruby version 2.7.1
+- Ruby version 2.7.1
 
-   ※ Need mysql and mroonga.
+  ※ Need mysql and mroonga.
 
-* Configuration Rails 6.0.x
+- Configuration Rails 6.0.x
 ```
 
 ### ログインするためには
 
 ```markdown
 > .bashrc or etc shell.
-export NYASOCOM_BETA_DATABASE_PASSWORD="database password"
+> export NYASOCOM_BETA_DATABASE_PASSWORD="database password"
 
-> Googleアカウントを登録
+> Google アカウントを登録
 
 > config/environments/development.rb
 
-> 67-68行目 認証時Googleアカウント指定
-:username => Settings.gmail[:user_name],
-:password => Settings.gmail[:password],
+> 67-68 行目 認証時 Google アカウント指定
+> :username => Settings.gmail[:user_name],
+> :password => Settings.gmail[:password],
 
 > config/database.yml
-password: <%= Settings.database.password %>
+> password: <%= Settings.database.password %>
 
 > 環境構築
-rails g config:install
+> rails g config:install
 
-> config/ (環境構築ができないとき自前で作成)
-settings.yml
-settings.local.yml
+> config/
+
+> settings.yml
+> settings.local.yml
+
+#### settings.sample.yml
+
+#### settings.sample.local.yml
+
+_ファイルの名前を変更し、.sample.を削除する_
+_その後、config/フォルダ内へ移動_
 ```
 
-### settings.local.ymlの記述例
-
-```yml
-gmail:
-  user_name: 'Gmail_address'
-  password: 'Gmail_password'
-```
-
-### settings.ymlの記述例
-
-```yml
-database:
-  password: 'mysql_password'
-```
-
-### Googleセキュリティ管理
+### Google セキュリティ管理
 
 ```markdown
-> セキュリティを下げておく→認証後、設定を戻す
-https://www.google.com/settings/security/lesssecureapps
+> セキュリティを下げておく → 認証後、設定を戻す
+> https://www.google.com/settings/security/lesssecureapps
 
-sign up → Gmail and Gmailパスワード登録
-→ Gmailに本登録メールが届く → 認証
+sign up → Gmail and Gmail パスワード登録
+→ Gmail に本登録メールが届く → 認証
 ```
 
-### Gmailでメールが受信できなかった場合
+### Gmail でメールが受信できなかった場合
 
 ```markdown
 rails server 実行コンソール内
+
 <p>Welcome karuma.reason@gmail.com!</p>
 <p>You can confirm your account email through the link below:</p>
 <p><a href="　(URL and TOKEN)　"> (URL and TOKENをブラウザに貼り付けで本人確認できる) Confirm my account</a></p>
@@ -80,30 +74,32 @@ rails server 実行コンソール内
 ### 管理者権限付与
 
 ```markdown
-$ rails c
-user = User.find(1) # 管理者対象をUser(id番号指定)
-user.update_attribute(:admin, "true") # 指定した番号のUserを登録
+\$ rails c
+user = User.find(1) # 管理者対象を User(id 番号指定)
+user.update_attribute(:admin, "true") # 指定した番号の User を登録
 ```
 
-### 管理者のみ管理画面設定 (11~12行目)
+### 管理者のみ管理画面設定 (11~12 行目)
 
 > config/initializers/rails_admin.rb
 
 ```markdown
 ## == CancanCan ==
+
 config.authorize_with :cancancan
 ```
 
-### mroonga環境構築
-*※ MacOSは自作gistを参考、またはmroongaをhomebrewでインストールします*
+### mroonga 環境構築
+
+_※ MacOS は自作 gist を参考、または mroonga を homebrew でインストールします_
 
 [mroonga(mac)](https://gist.github.com/takkii/5b6110b6643e28593842102c39fba0e5)
 
-*※ WindowsはmariaDBで既存mroongaが用意されています*
+_※ Windows は mariaDB で既存 mroonga が用意されています_
 
 [mroonga(windows)](https://github.com/mroonga/mroonga/releases)
 
-*※ Linuxカーネルは、公式にドキュメントがあります*
+_※ Linux カーネルは、公式にドキュメントがあります_
 
 [mroonga(Linuxkernel)](https://mroonga.org/ja/docs/install.html)
 
@@ -120,8 +116,8 @@ rake db:create
 rake db:migrate
 rake db:seed
 
-rails s          # local server Start up
-Ctrl + C         # Stop
+rails s # local server Start up
+Ctrl + C # Stop
 ```
 
 ### 鬼灯のレイアウト
