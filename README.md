@@ -46,8 +46,8 @@ settings.local.yml
 settings.sample.yml
 settings.sample.local.yml
 
-_ファイルの名前を変更し、.sample.を削除する_
-_その後、config/フォルダ内へ移動_
+ファイルの名前を変更し、.sample.を削除
+その後、config/フォルダ内へ移動
 ```
 
 ### Google セキュリティ管理
