@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)[![GitHub release](https://img.shields.io/github/release/takkii/nyasocom_beta.svg?style=flat)](GitHub)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/nyasocom_beta.svg?style=flat)](GitHub)
 
-<div align="center"><img src="https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki.png" alt="hozuki" title="logo"></div>
+<div align="center"><img src="https://github.com/takkii/nyasocom_beta/blob/main/public/images/hozuki.png" alt="hozuki" title="logo"></div>
 
 ## Project Name, nyasocom_beta.
 
@@ -126,4 +126,4 @@ Ctrl + C         # Stop
 
 ### 鬼灯のレイアウト
 
-![鬼灯レイアウト(傘挙動 青→白)](https://github.com/takkii/nyasocom_beta/blob/master/public/images/hozuki.gif)
+![鬼灯レイアウト(傘挙動 青→白)](https://github.com/takkii/nyasocom_beta/blob/main/public/images/hozuki.gif)
