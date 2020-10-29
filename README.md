@@ -73,7 +73,8 @@ rails server 実行コンソール内
 ### 管理者権限付与
 
 ```markdown
-\$ rails c
+rails c
+
 user = User.find(1) # 管理者対象を User(id 番号指定)
 user.update_attribute(:admin, "true") # 指定した番号の User を登録
 ```
