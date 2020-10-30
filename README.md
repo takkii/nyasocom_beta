@@ -39,13 +39,13 @@ password: <%= Settings.database.password %>
 rails g config:install
 
 > 環境構築 (手動)
-cp settings.sample.yml config/settings.yml
+> cp settings.sample.yml config/settings.yml
 
 gmail:
   user_name: "Your_Gmail_Address"
   password: "Your_Gmail_Password"
 
-cp settings.sample.local.yml config/settings.local.yml
+> cp settings.sample.local.yml config/settings.local.yml
 
 database:
   password: "Your_Local_MySQL_Password"
