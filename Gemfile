@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -22,8 +24,9 @@ gem 'mini_racer'
 # Use TypeScript.
 gem 'webpacker'
 
-gem 'jquery-rails'
 gem 'autoprefixer-rails'
+gem 'jquery-rails'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 5.0.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -43,49 +46,52 @@ gem 'rmagick'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # gem 'rails-i18n', '~> 5.1'
-gem 'rails-i18n', '~> 6.0'
 gem 'bootstrap'
+gem 'rails-i18n', '~> 6.0'
 
-gem 'nokogiri'
 gem 'devise'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 # gem 'wdm', '>= 0.1.0'
+gem 'nokogiri'
 
+gem 'cancan'
 gem 'config'
 gem 'kaminari'
 gem 'rails_admin'
-gem 'cancan'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw]
+  # gem 'byebug', platforms: [:mri, :mingw]
+  gem 'byebug', platforms: [:ruby]
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15', '< 4.0'
-  gem 'selenium-webdriver'
-  gem 'rspec'
-  gem 'rspec-rails'
+
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'rspec'
+  gem 'rspec-rails'
+
+  gem 'selenium-webdriver'
 end
 
 group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'cucumber-rails'
   gem 'cucumber'
+  gem 'cucumber-rails'
   gem 'database_cleaner'
 end
 
