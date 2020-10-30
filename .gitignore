@@ -34,7 +34,7 @@ log/.keep
 .idea
 
 config/settings.local.yml
-config/settings/*.local.yml
+config/settings.yml
 config/environments/*.local.yml
 *.rakeTasks
 
