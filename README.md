@@ -11,9 +11,9 @@ _nyasocom の試作品として作り始めました..._
 ### Web Library System Name is '鬼灯'
 
 ```markdown
-- Ruby version 2.7.1
+- Ruby version 2.7
 
-  ※ Need mysql and mroonga.
+  ※ Need MySQL and Mroonga.
 
 - Configuration Rails 6.0.x
 ```
