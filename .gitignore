@@ -35,7 +35,6 @@ log/.keep
 
 config/settings.local.yml
 config/settings.yml
-config/environments/*.local.yml
 *.rakeTasks
 
 /public/packs
