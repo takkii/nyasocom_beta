@@ -35,18 +35,20 @@ config/environments/development.rb
 > config/database.yml
 password: <%= Settings.database.password %>
 
-> 環境構築 (自動生成)
+> 環境構築 (自動)
 rails g config:install
 
-または手動にて環境構築
+> 環境構築 (手動)
+cp settings.sample.yml config/settings.yml
 
-> config/ (設置例)
-settings.yml
-settings.local.yml
+gmail:
+  user_name: "Your_Gmail_Address"
+  password: "Your_Gmail_Password"
 
-> nyasocom2/ (設置前)
-settings.sample.yml
-settings.sample.local.yml
+cp settings.sample.local.yml config/settings.local.yml
+
+database:
+  password: "Your_Local_MySQL_Password"
 ```
 
 ### Google セキュリティ管理
