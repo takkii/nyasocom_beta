@@ -40,16 +40,13 @@ rails g config:install
 
 または手動にて環境構築
 
-> config/
+> config/ (設置例)
 settings.yml
 settings.local.yml
 
-> nyasocom2/
+> nyasocom2/ (設置前)
 settings.sample.yml
 settings.sample.local.yml
-
-> ファイルの名前を変更し、.sample.を削除
-その後、config/フォルダ内へ移動
 ```
 
 ### Google セキュリティ管理
