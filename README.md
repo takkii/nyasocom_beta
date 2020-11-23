@@ -90,6 +90,14 @@ user.update_attribute(:admin, "true") # 指定した番号の User を登録
 config.authorize_with :cancancan
 ```
 
+### macports (対処: mysql57)
+
+```markdown
+Mysql2::Error::ConnectionError: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+
+sudo ln -s /opt/local/var/run/mysql57/mysqld.sock /tmp/mysql.sock
+```
+
 ### mroonga 環境構築
 
 _※ MacOS は自作 gist を参考、または mroonga を homebrew でインストールします_
