@@ -46,7 +46,7 @@
     <tr>
       <th align="left">国際標準図書番号</th>
       <th align="left">題 名</th>
-      <th align="left">価 格 (¥)</th>
+      <th align="left">価 格</th>
       <th align="left">著 者</th>
       <th align="left">出 版 日</th>
       <th align="left">購 入</th>
@@ -77,7 +77,7 @@
             </td>
             <td>
               <% if book.price.present? %>
-                <%= book.price %>
+                <p>￥<%= (book.price).to_s(:delimited) %></p>
               <% else %>
                 価格 (¥)はありません
               <% end %>
