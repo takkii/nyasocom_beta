@@ -14,51 +14,51 @@
 <div class="switch-presentation">
   <label for="dark"><span class="day">&#9748;</span><span class="moon">&#9730;</span></label>
   <div class="content">
-<div class="scroll">
-  <div id="container">
-    <div class="attach">
-      <div id="header">
-        <div class="shelf">
-          <h1>Web Library System 「鬼灯」</h1>
-        </div>
-        <div class="timer">
-          <h3><p id="RealtimeClockArea2"></p></h3>
-        </div>
-        <div id="main-navigation">
-          <ul class="wat-cf"></ul>
-        </div>
-      </div>
-      <div id="wrapper" class="wat-cf">
-        <div class="flash">
-          <% flash.each do |type, message| -%>
-            <div class="message <%= type %>">
-              <p>
-                <%= message %>
-              </p>
+    <div class="scroll">
+      <div id="container">
+        <div class="attach">
+          <div id="header">
+            <div class="shelf">
+              <h1>Web Library System 「鬼灯」</h1>
             </div>
-          <% end -%>
-        </div>
-        <div id="main">
-          <%= yield %>
-          <div id="footer">
-            <div class="block">
-              <div class="books">
-                <p>
-                   Copyright &copy; 2018 - <%= Time.now.year %> Created by Takayuki Kamiyama
-                  <a href="https://twitter.com/takkii"><i class="fab fa-twitter"></i></a>
-                 <a href="https://github.com/takkii"><i class="fab fa-github"></i></a>
-                </p>
+            <div class="timer">
+              <h3><p id="RealtimeClockArea2"></p></h3>
+            </div>
+            <div id="main-navigation">
+              <ul class="wat-cf"></ul>
+            </div>
+          </div>
+          <div id="wrapper" class="wat-cf">
+            <div class="flash">
+              <% flash.each do |type, message| -%>
+                <div class="message <%= type %>">
+                  <p>
+                    <%= message %>
+                  </p>
+                </div>
+              <% end -%>
+            </div>
+            <div id="main">
+              <%= yield %>
+              <div id="footer">
+                <div class="block">
+                  <div class="books">
+                    <p>
+                      Copyright &copy; 2018 - <%= Time.now.year %> Created by Takayuki Kamiyama
+                      <a href="https://twitter.com/takkii"><i class="fab fa-twitter"></i></a>
+                      <a href="https://github.com/takkii"><i class="fab fa-github"></i></a>
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div id="sidebar">
+              <%= yield :sidebar %>
             </div>
           </div>
         </div>
-        <div id="sidebar">
-          <%= yield :sidebar %>
-        </div>
       </div>
     </div>
-  </div>
-</div>
   </div>
 </div>
 </body>
