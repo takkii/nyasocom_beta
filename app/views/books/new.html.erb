@@ -36,8 +36,8 @@
     <div class="field">
       <%= form.label :published %>
       <%= form.date_field(
-              :published,
-              value: (form.object.published || Time.now.strftime("%Y-%m-%d")),
+            :published,
+            value: (form.object.published || Time.now.strftime("%Y-%m-%d")),
           ) %>
     </div>
     <br/>
