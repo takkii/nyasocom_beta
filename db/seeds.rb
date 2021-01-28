@@ -11,7 +11,7 @@
 #
 
 Book.create(:isbn=>'9784798053639',:title=>'Pythonプログラミング逆引き大全',:price=>'2600',:publish=>'金城俊哉',:published=>'2018/04/01',:cd=>'true')
-Book.create(:isbn=>'9784863541122',:title=>'Java逆引きハンドブック',:price=>'4320',:publish=>'株式会社エイベル',:published=>'2012/10/27',:cd=>'true')
+Book.create(:isbn=>'9784863541122',:title=>'Java逆引きハンドブック',:price=>'4000',:publish=>'株式会社エイベル',:published=>'2012/10/27',:cd=>'true')
 Book.create(:isbn=>'9784863540224',:title=>'Ruby逆引きハンドブック',:price=>'3800',:publish=>'るびきち',:published=>'2009/05/25',:cd=>'true')
 Book.create(:isbn=>'9784863542440',:title=>'改訂2版 Ruby逆引きハンドブック',:price=>'3820',:publish=>'卜部昌平',:published=>'2018/08/28',:cd=>'true')
 Book.create(:isbn=>'9784797363821',:title=>'Rails3レシピブック 190の技',:price=>'2980',:publish=>'高橋征義',:published=>'2011/07/25',:cd=>'true')
