@@ -52,8 +52,8 @@
       </th>
       <th>著 者</th>
       <th>出 版 日</th>
-      <th>購 入</th>
       <th>写 真</th>
+      <th>購 入</th>
       <th>状 態</th>
       <th colspan="3"></th>
     </tr>
@@ -102,17 +102,17 @@
               <% end %>
             </td>
             <td>
-              <% if book.cd.present? %>
-                購入後
-              <% else %>
-                購入はありません
-              <% end %>
-            </td>
-            <td>
               <% if book.picture.present? %>
                 <%= book.picture %>
               <% else %>
                 写真はありません
+              <% end %>
+            </td>
+            <td>
+              <% if book.cd.present? %>
+                購入後
+              <% else %>
+                購入はありません
               <% end %>
             </td>
             <td>
