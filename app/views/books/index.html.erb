@@ -81,7 +81,7 @@
             <td>
               <div align="center">
                 <% if book.price.present? %>
-                  <p>￥<%= (book.price).to_s(:delimited) %></p>
+                  ￥<%= (book.price).to_s(:delimited) %>
                 <% else %>
                   価格 (¥)はありません
                 <% end %>
