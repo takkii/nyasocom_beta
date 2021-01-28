@@ -122,9 +122,15 @@
                 本はありません
               <% end %>
             </td>
-            <td><%= link_to '閲覧', book, class: "btn btn-primary" %></td>
-            <td><%= link_to '編集', edit_book_path(book), class: "btn btn-primary" %></td>
-            <td><%= link_to '削除', book, method: :delete, data: { confirm: '登録した書籍情報を削除しますか？' }, class: "btn btn-primary" %></td>
+            <td>
+              <div align="right"><%= link_to '閲覧', book, class: "btn btn-primary" %></div>
+            </td>
+            <td>
+              <div align="center"><%= link_to '編集', edit_book_path(book), class: "btn btn-primary" %></div>
+            </td>
+            <td>
+              <div align="left"><%= link_to '削除', book, method: :delete, data: { confirm: '登録した書籍情報を削除しますか？' }, class: "btn btn-primary" %></div>
+            </td>
           </tr>
         <% end %>
       </div>
