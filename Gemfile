@@ -47,7 +47,12 @@ gem 'rmagick'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # gem 'rails-i18n', '~> 5.1'
-gem 'bootstrap'
+
+gem 'bootstrap-sass'
+gem 'bootswatch-rails'
+
+#gem 'bootstrap'
+gem 'bootswatch'
 gem 'rails-i18n', '~> 6.0'
 
 gem 'devise'
