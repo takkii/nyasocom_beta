@@ -98,6 +98,14 @@ Mysql2::Error::ConnectionError: Can't connect to local MySQL server through sock
 sudo ln -s /opt/local/var/run/mysql57/mysqld.sock /tmp/mysql.sock
 ```
 
+### 新レイアウト、環境構築
+
+```markdown
+npm install -g yarn
+yarn add jquery
+yarn add bootswatch@4.5.2
+```
+
 ### mroonga 環境構築
 
 _※ MacOS は自作 gist を参考、または mroonga を homebrew でインストールします_
