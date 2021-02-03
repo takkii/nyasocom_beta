@@ -98,7 +98,7 @@ Mysql2::Error::ConnectionError: Can't connect to local MySQL server through sock
 sudo ln -s /opt/local/var/run/mysql57/mysqld.sock /tmp/mysql.sock
 ```
 
-### 新レイアウト、環境構築
+### 新レイアウト適用
 
 ```markdown
 npm install -g yarn
