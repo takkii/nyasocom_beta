@@ -94,8 +94,8 @@ group :development do
 end
 
 group :test do
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  # new rubygems webdrivers
+  gem 'webdrivers'
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'database_cleaner'

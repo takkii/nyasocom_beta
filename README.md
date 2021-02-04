@@ -2,11 +2,9 @@
 
 <div align="center"><img src="https://github.com/takkii/nyasocom_beta/blob/main/public/images/hozuki.png" alt="hozuki" title="logo"></div>
 
-## Project Name, nyasocom_beta.
+## Project Name, nyasocom2.
 
-_nyasocom の試作品として作り始めました..._
-
-※ プロジェクトは MIT ライセンスですが、利用するときは個人情報の取り扱いに注意してください。
+nyasocom2 is My Library System.
 
 ### Web Library System Name is '鬼灯'
 
@@ -132,6 +130,8 @@ bundle install
 rake db:create
 rake db:migrate
 rake db:seed
+
+rails webpacker:install
 
 rails s # local server Start up
 Ctrl + C # Stop
