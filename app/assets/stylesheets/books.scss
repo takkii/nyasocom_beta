@@ -12,19 +12,21 @@
 }
 
 .left {
-  padding-left: 10vw;
+  position: relative;
+  top: 1.0vw;
+  left: 10vw;
 }
 
 .right {
   position: absolute;
   top: 1.0vw;
-  left: 62.5vw;
+  left: 70vw;
 }
 
 .timer {
   position: absolute;
-  top: 3vw;
-  left: 39vw;
+  top: 0.5vw;
+  left: 59.5vw;
 }
 
 .shelf {
@@ -65,28 +67,28 @@
 
 .sponsor {
   position: absolute;
-  top: 5vw;
-  left: 54vw;
+  top: 4.5vw;
+  left: 67vw;
 }
 
 .silver {
   position: absolute;
   top: 5.5vw;
-  left: 47vw;
+  left: 60vw;
   animation: rotate-anime 3s linear infinite;
 }
 
 .pythonista {
   position: absolute;
   top: 5.5vw;
-  left: 41vw;
+  left: 52.5vw;
   animation: rotate-anime_y 3s linear infinite;
 }
 
 .pyruby {
   position: absolute;
   top: 5.5vw;
-  left: 35.5vw;
+  left: 45vw;
   animation: rotate-anime 3s linear infinite;
 }
 
@@ -97,7 +99,7 @@
 .zukkii {
   position: absolute;
   top: 5.5vw;
-  left: 29vw;
+  left: 37vw;
   animation: rotate-anime_y 3s linear infinite;
 }
 
