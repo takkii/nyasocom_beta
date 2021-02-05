@@ -7,4 +7,4 @@
 <a href="https://github.com/takkii/nyasocom2/wiki/how_to_use">Wiki</a>に環境構築を移動しました。
 </div>
 <br />
-<div style="text-align: center;">にゃそこん2、始動 !</div>>
+<div style="text-align: center;">にゃそこん2、始動 !</div>
