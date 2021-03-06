@@ -51,7 +51,7 @@ gem 'rmagick'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 
-#gem 'bootstrap'
+# gem 'bootstrap'
 gem 'bootswatch'
 gem 'rails-i18n', '~> 6.0'
 
@@ -94,11 +94,11 @@ group :development do
 end
 
 group :test do
-  # new rubygems webdrivers
-  gem 'webdrivers'
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'database_cleaner'
+  # new rubygems webdrivers
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
