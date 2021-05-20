@@ -13,13 +13,19 @@
 
 .left {
   position: relative;
-  top: 1.0vw;
+  top: 3vw;
   left: 10vw;
+}
+
+.left_search {
+  position: relative;
+  top: 2vw;
+  left: 8.5vw;
 }
 
 .right {
   position: absolute;
-  top: 1.0vw;
+  top: 1vw;
   left: 70vw;
 }
 
@@ -124,7 +130,6 @@
 :root {
   --bg: #fff;
   --fg: #333;
-
 }
 
 label span {
