@@ -9,7 +9,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '264f91b8ab3c82152d537f0fbd311c54923be3bb24e91b4df5ddc893822a6609f4c99fcd7b72afd057c7bcf3ffffec4370a2cab700924d62f0ad04c107d6d767'
-  
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -18,10 +18,10 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'karuma.reason@gmail.com'
 
   # Configure the class responsible to send e-mails.
-  # config.mailer = 'Devise::Mailer'
+  config.mailer = 'Devise::Mailer'
 
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
@@ -136,7 +136,7 @@ Devise.setup do |config|
   # their account can't be confirmed with the token any more.
   # Default is nil, meaning there is no restriction on how long a user can take
   # before confirming their account.
-  # config.confirm_within = 3.days
+  config.confirm_within = 1.days
 
   # If true, requires any email changes to be confirmed (exactly the same way as
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
