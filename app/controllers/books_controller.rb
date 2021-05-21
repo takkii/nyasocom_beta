@@ -1,11 +1,10 @@
 class BooksController < ApplicationController
-  PER = 15
   before_action :set_book, only: [:show, :edit, :update, :destroy]
   # GET /books
   # GET /books.json
   def index
     @hon = Book.all
-    @books = Kaminari.paginate_array(Book.search(params[:search])).page(params[:page]).per(PER)
+    @books = Kaminari.paginate_array(Book.search(params[:search])).page(params[:page])
   end
 
   # GET /books/1
