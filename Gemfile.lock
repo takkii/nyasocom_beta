@@ -453,7 +453,6 @@ DEPENDENCIES
   font-awesome-rails
   jbuilder (~> 2.5)
   jquery-rails
-  kaminari
   listen
   mimemagic (~> 0.3.10)
   mini_racer
