@@ -65,7 +65,7 @@ gem 'nokogiri'
 
 gem 'cancan'
 gem 'config'
-# gem 'kaminari'
+gem 'kaminari'
 gem 'rails_admin'
 
 # Reduces boot times through caching; required in config/boot.rb
