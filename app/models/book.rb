@@ -12,6 +12,8 @@ class Book < ApplicationRecord
 
   def self.search(search)
     return Book.all unless search
-    Book.where(['title LIKE ?', "%#{search}%"])
+    # Book.where(['title LIKE ?', "%#{search}%"]) # デフォルトの検索
+    # Kaminari.paginate_array(Book.where(['title LIKE ?', "%#{search}%"])).page(表示するページ番号).per(件数)
+    Kaminari.paginate_array(Book.where(['title LIKE ?', "%#{search}%"])).page(1).per(15)
   end
 end
