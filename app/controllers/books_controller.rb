@@ -1,13 +1,10 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
-  PER = 15
   # GET /books
   # GET /books.json
   def index
     @hon = Book.all
-    #@books = Book.page(params[:page]).per(PER)
     @books = Book.search(params[:search])
-    @bookes = Book.page(params[:page]).per(PER)
   end
 
   # GET /books/1
