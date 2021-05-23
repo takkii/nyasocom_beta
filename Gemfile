@@ -19,8 +19,10 @@ gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'execjs'
-gem 'mini_racer'
+gem 'execjs'
+#gem 'mini_racer'
+gem 'therubyrhino'
+
 
 # Use TypeScript.
 gem 'webpacker'
@@ -51,7 +53,7 @@ gem 'rmagick'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 
-gem 'mimemagic', '~> 0.3.10'
+gem 'mimemagic'
 
 # gem 'bootstrap'
 gem 'bootswatch'
